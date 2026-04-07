@@ -41,7 +41,7 @@ public class ShoppingCart {
     }
 
     public void displayCart() {
-        System.out.println("\n=== КОРЗИНА ===");
+        System.out.println("\n=== Корзина ===");
         System.out.println("Покупатель: " + customer.getName());
         if (items.isEmpty()) {
             System.out.println("Корзина пуста");

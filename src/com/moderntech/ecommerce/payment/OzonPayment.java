@@ -5,8 +5,7 @@ import com.moderntech.ecommerce.models.Order;
 public class OzonPayment implements Payment {
     @Override
     public boolean processPayment(Order order, PaymentMethod paymentMethod) {
-        System.out.println("\nОПЛАТА ЧЕРЕЗ OZON");
-        System.out.println("Платёжный провайдер: OZON");
+        System.out.println("\nОплата OZON");
         System.out.println("Способ оплаты: " + paymentMethod.getDetails());
         System.out.printf("Сумма платежа: %.2f руб.%n", order.getTotalAmount());
 

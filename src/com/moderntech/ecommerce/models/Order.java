@@ -39,7 +39,7 @@ public class Order {
     public PaymentStatus getPaymentStatus() { return paymentStatus; }
 
     public void setStatus(OrderStatus newStatus) {
-        System.out.printf("🔄 Статус заказа #%s изменён: %s → %s%n",
+        System.out.printf("Статус заказа #%s изменён: %s → %s%n",
                 id, this.status, newStatus);
         this.status = newStatus;
     }
@@ -53,7 +53,7 @@ public class Order {
     }
 
     public void displayOrder() {
-        System.out.println("\n=== ЗАКАЗ #" + id + " ===");
+        System.out.println("\n=== Заказ #" + id + " ===");
         System.out.println("Дата: " + createdAt.format(DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm:ss")));
         System.out.println("Покупатель: " + customer.getName());
         System.out.println("Статус: " + status);

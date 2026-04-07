@@ -4,16 +4,13 @@ import com.moderntech.ecommerce.enums.OrderStatus;
 import com.moderntech.ecommerce.enums.ProductCategory;
 import com.moderntech.ecommerce.models.*;
 import com.moderntech.ecommerce.payment.*;
-import com.moderntech.ecommerce.payment.impl.CashOnDelivery;
-import com.moderntech.ecommerce.payment.impl.CreditCardPayment;
-import com.moderntech.ecommerce.payment.impl.DigitalWalletPayment;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class ECommerceApp {
     public static void main(String[] args) {
-        System.out.println("\nДОБРО ПОЖАЛОВАТЬ В MODERN TECH MALL\n");
+        System.out.println("\nДобро пожаловать!\n");
 
         // 1. Каталог товаров
         Map<Integer, Product> catalog = new HashMap<>();

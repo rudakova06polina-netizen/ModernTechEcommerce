@@ -5,8 +5,7 @@ import com.moderntech.ecommerce.models.Order;
 public class WildberriesPayment implements Payment {
     @Override
     public boolean processPayment(Order order, PaymentMethod paymentMethod) {
-        System.out.println("\nОПЛАТА ЧЕРЕЗ WILDBERRIES");
-        System.out.println("Платёжный провайдер: Wildberries");
+        System.out.println("\nОплата WILDBERRIES");
         System.out.println("Способ оплаты: " + paymentMethod.getDetails());
         System.out.printf("Сумма платежа: %.2f руб.%n", order.getTotalAmount());
 
