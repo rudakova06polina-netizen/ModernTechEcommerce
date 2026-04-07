@@ -61,12 +61,12 @@ public class ECommerceApp {
 
         //Ozon + банковская карта
         System.out.println("\n[Вариант 1]");
-        PaymentMethod creditCard = new CreditCardPayment("1234567890123456", "ALEXEY IVANOV");
+        PaymentMethod creditCard = new CreditCardPayment("1234567890123456", "POLINA RUDAKOVA");
         ozonPayment.processPayment(order, creditCard);
 
         //Wildberries + электронный кошелёк
         System.out.println("\n[Вариант 2]");
-        PaymentMethod digitalWallet = new DigitalWalletPayment("alexey@wb.ru");
+        PaymentMethod digitalWallet = new DigitalWalletPayment("polina@wb.ru");
         wbPayment.processPayment(order, digitalWallet);
 
         //Ozon + наложенный платёж
