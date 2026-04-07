@@ -1,6 +1,4 @@
-package com.moderntech.ecommerce.payment.impl;
-
-import com.moderntech.ecommerce.payment.PaymentMethod;
+package com.moderntech.ecommerce.payment;
 
 public final class CreditCardPayment implements PaymentMethod {
     private final String cardNumber;
